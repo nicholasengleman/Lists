@@ -1,0 +1,23 @@
+.NavContainer {
+	width: 100%;
+	height: 50px;
+	background-color: lightblue;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 25px;
+}
+
+.VideoManagementButton {
+	width: 200px;
+	height: 75%;
+	background-color: red;
+	color: white;
+	margin-right: 100px;
+	border: none;
+	border-radius: 3px;
+}
+
+.VideoManagementButton:hover {
+	cursor: pointer;
+}

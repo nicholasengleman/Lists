@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './HeaderPost.module.css';
-import Moment from "moment";
+import Moment from "moment/moment";
 
 const HeaderPost = ({post}) => {
 
