@@ -3,4 +3,9 @@
   max-width: 1500px;
   margin: 0 auto;
   position: relative;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }

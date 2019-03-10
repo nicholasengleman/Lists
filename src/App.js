@@ -7,7 +7,7 @@ import { getAllClubs } from "./services/fakeClubService";
 import NavContainer from "./components/NavContainer/NavContainer";
 import Header from "./components/Header/header";
 import TabContainer from "./components/TabContainer/TabContainer";
-import Main from "./components/MainContainer/Main";
+import MainContainer from "./components/MainContainer/MainContainer";
 import VideoMangementContainer from "./components/VideoManagementContainer/VideoManagementContainer";
 
 class App extends Component {
@@ -38,7 +38,7 @@ class App extends Component {
                 <NavContainer onVideoManagementClick={this.handleVideoManagement}/>
                 <Header posts={this.state.posts} selectedClub={this.state.selectedClub}/>
                 <TabContainer clubs={this.state.topClubs} onClubSelect={this.handleClubSelect}/>
-                <Main/>
+                <MainContainer posts={this.state.posts} selectedClub={this.state.selectedClub} />
             </main>
         );
     }

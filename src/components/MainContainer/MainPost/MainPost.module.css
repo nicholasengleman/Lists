@@ -1,0 +1,59 @@
+.mainPostContainer {
+	width: 100%;
+	height: 150px;
+	margin: 20px 0;
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.videoContainer {
+	height: 100%;
+	width: 250px;
+	position: relative;
+}
+
+.videoContainer iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	max-width: 100%;
+	height: 100%;
+}
+
+.rightContent {
+	width: 100%;
+	height: 100%;
+	margin-left: 25px;
+}
+
+.topRow {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	height: 30px;
+	align-items: center;
+}
+
+.username {
+	color: lightblue;
+	font-weight: 700;
+}
+
+.date {
+	font-style: italic;
+	font-size: 14px;
+	margin-left: 25px;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: 800;
+	margin-bottom: 5px;
+}
+
+.subtitle {
+	font-size: 12px;
+}

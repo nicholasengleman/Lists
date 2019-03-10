@@ -8,7 +8,7 @@ class Header extends Component {
     render() {
         return (
             <div className={styles.header}>
-                <div className={styles.title}>Top {this.props.selectedClub} Posts This Hour</div>
+                <div className={styles.title}>Top {this.props.selectedClub} Posts Last 60 Minutes</div>
                 <div>
                     <div className={styles.postsContainer}>
                         {
