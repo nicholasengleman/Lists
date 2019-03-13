@@ -1,16 +1,13 @@
 .mainPostContainer {
-	width: 100%;
-	height: 150px;
-	margin: 20px 0;
-	border: 1px solid black;
-	display: flex;
-	justify-content: space-between;
+	width: 210px;
+	height: 234px;
+	margin: 10px 5px 0 0;
 }
 
 
 .videoContainer {
-	height: 100%;
-	width: 250px;
+	width: 100%;
+	height: 117px;
 	position: relative;
 }
 
@@ -23,34 +20,30 @@
 	height: 100%;
 }
 
-.rightContent {
+.textContent {
 	width: 100%;
-	height: 100%;
-	margin-left: 25px;
+	height: 117px;
+	padding: 10px;
+	overflow: hidden;
 }
 
 .topRow {
-	display: flex;
-	justify-content: flex-start;
-	width: 100%;
-	height: 30px;
-	align-items: center;
+	font-size: 12px;
+	margin-bottom: 5px;
 }
 
 .username {
-	color: lightblue;
 	font-weight: 700;
 }
 
 .date {
 	font-style: italic;
-	font-size: 14px;
 	margin-left: 25px;
 }
 
 .title {
-	font-size: 18px;
-	font-weight: 800;
+	font-size: 12px;
+	font-weight: 700;
 	margin-bottom: 5px;
 }
 

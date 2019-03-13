@@ -1,44 +1,34 @@
 import React, {Component} from "react";
 import "./App.css";
-
-import { getAllPosts } from "./services/fakePostsService";
-import { getAllClubs } from "./services/fakeClubService";
+import { Route } from 'react-router-dom';
 
 import NavContainer from "./components/NavContainer/NavContainer";
-import Header from "./components/Header/header";
-import TabContainer from "./components/TabContainer/TabContainer";
-import MainContainer from "./components/MainContainer/MainContainer";
-import VideoMangementContainer from "./components/VideoManagementContainer/VideoManagementContainer";
+import SignInModal from "./components/SignInModal/SignInModal";
+import HomeContainer from "./components/HomeContainer/HomeContainer";
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedClub: "News",
-            posts: getAllPosts(),
-            VideoManagement_Open: false,
-            topClubs: getAllClubs()
+            sign_in_modal_open: false
         };
     }
 
 
-    handleClubSelect = club => {
-        this.setState( {selectedClub: club});
-    };
-
-
     handleVideoManagement = () => {
-      this.setState({ VideoManagement_Open: !this.state.VideoManagement_Open });
+        this.setState({ VideoManagement_Open: !this.state.VideoManagement_Open });
     };
+
+
+
+
 
     render() {
         return (
             <main className="container">
-                <VideoMangementContainer active={this.state.VideoManagement_Open}/>
+                <SignInModal active={this.state.sign_in_modal_open}/>
                 <NavContainer onVideoManagementClick={this.handleVideoManagement}/>
-                <Header posts={this.state.posts} selectedClub={this.state.selectedClub}/>
-                <TabContainer clubs={this.state.topClubs} onClubSelect={this.handleClubSelect}/>
-                <MainContainer posts={this.state.posts} selectedClub={this.state.selectedClub} />
+                <Route path="/home" component={HomeContainer} />
             </main>
         );
     }

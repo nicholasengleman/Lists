@@ -12,13 +12,13 @@ const MainPost = (props) => {
                         allowFullScreen>
                 </iframe>
             </div>
-            <div className={styles.rightContent}>
+            <div className={styles.textContent}>
                 <div className={styles.topRow}>
                     <span className={styles.username}>{props.post.username}</span>
                     <span className={styles.date}>{Moment(props.post.publishDate).fromNow()}</span>
                 </div>
                 <div className={styles.title}>{props.post.title}</div>
-                <div className={styles.subtitle}>{props.post.subtitle}</div>
+                {/*<div className={styles.subtitle}>{props.post.subtitle}</div>*/}
             </div>
 
         </div>

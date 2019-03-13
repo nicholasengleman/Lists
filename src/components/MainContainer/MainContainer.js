@@ -8,9 +8,9 @@ const MainContainer = (props) => {
     return (
         <div className={styles.container}>
             <div>Top { props.selectedClub } Today</div>
-            <div>
+            <div className={styles.videoContainer}>
                 {
-                    props.posts[props.selectedClub].clubposts.normal.map((post, i) => <MainPost key={i} post={post}/>)
+                    props.posts.map((post, i) => <MainPost key={i} post={post}/>)
                 }
             </div>
         </div>

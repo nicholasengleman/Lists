@@ -1,10 +1,14 @@
 import React from "react";
-import styles from  "./NavContainer.module.css";
+import styles from "./NavContainer.module.css";
 
 const NavContainer = props => {
     return (
         <div className={styles.NavContainer}>
-            <button onClick={props.onVideoManagementClick} className={styles.VideoManagementButton}>Video Management</button>
+            <div className={styles.NavContent}>
+                {/*<div className={styles.user - photo}></div>*/}
+                <div className={styles.username}></div>
+                <div className={styles.signIn}>SIGN IN</div>
+            </div>
         </div>
     )
 };
