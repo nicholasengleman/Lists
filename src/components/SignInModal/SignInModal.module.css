@@ -1,4 +1,4 @@
-.VideoManagementContainer {
+.signInModalContainer {
 	width: 600px;
 	height: 800px;
 	top: 25px;
@@ -10,7 +10,6 @@
 	background-color: white;
 	z-index: 2;
 	padding: 20px;
-	display: none;
 }
 
 
