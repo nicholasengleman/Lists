@@ -1,0 +1,33 @@
+
+.bottomContent {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+}
+
+
+
+.block {
+	width: 90%;
+	height: 100%;
+	min-height: 200px;
+	background-color: white;
+	border: 1px solid lightgray;
+	padding: 0 20px;
+	border-radius: 5px;
+	margin: 20px auto;
+}
+
+.header {
+	width: 100%;
+}
+
+.username {
+	color: brown;
+	font-weight: 600;
+}
+
+.date {
+	font-size: 12px;
+}

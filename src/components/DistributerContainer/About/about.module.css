@@ -1,0 +1,41 @@
+.bottomContent {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+}
+
+.leftColumn {
+	height: 100%;
+	width: 35%;
+}
+
+.rightColumn {
+	height: 100%;
+	width: 65%;
+}
+
+
+.block {
+	width: 90%;
+	height: 100%;
+	background-color: white;
+	border: 1px solid lightgray;
+	margin: 20px;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.about {
+	height: 100px;
+}
+
+
+.title {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ececec;
+	width: 50%;
+}
+
+
+
