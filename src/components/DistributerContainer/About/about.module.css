@@ -7,12 +7,12 @@
 
 .leftColumn {
 	height: 100%;
-	width: 35%;
+	width: 50%;
 }
 
 .rightColumn {
 	height: 100%;
-	width: 65%;
+	width: 50%;
 }
 
 
@@ -23,18 +23,36 @@
 	border: 1px solid lightgray;
 	margin: 20px;
 	padding: 10px 20px;
-	border-radius: 5px;
+	border-radius: 2px;
+	position: relative;
 }
 
-.about {
-	height: 100px;
-}
+
 
 
 .title {
 	margin-bottom: 10px;
 	border-bottom: 1px solid #ececec;
 	width: 50%;
+}
+
+.input {
+	border-radius: 2px;
+	border: 1px solid lightblue;
+	padding: 5px 10px;
+	margin: 3px 0;
+}
+
+.saveButton {
+	padding: 3px 15px;
+	background-color:#365899;
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 13px;
+	letter-spacing: 1px;
+	border-radius: 3px;
+	font-size: 14px;
 }
 
 

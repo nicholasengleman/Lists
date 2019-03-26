@@ -7,7 +7,7 @@ const ProfileContainer = (props) => {
         <div className={styles.profilesContainer}>
             <div className={styles.row}>
                 <div className={}>
-                    <div className={} </div>
+                    <div className={}</div>
                 </div>
             </div>
         </div>
