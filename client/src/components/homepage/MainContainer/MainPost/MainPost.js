@@ -1,7 +1,7 @@
 import React from "react";
 import Moment from "moment/moment";
 
-import styles from  './MainPost.module.css';
+import styles from './MainPost.module.css';
 
 const MainPost = (props) => {
     return (

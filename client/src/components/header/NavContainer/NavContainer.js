@@ -1,17 +1,33 @@
-import React from "react";
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
 import styles from "./NavContainer.module.css";
 
-const NavContainer = props => {
-    return (
-        <div className={styles.NavContainer}>
-            <div className={styles.NavContent}>
-                {/*<div className={styles.user - photo}></div>*/}
-                <div className={styles.username}></div>
-                <Link to="/login"><div className={styles.signIn}>SIGN IN</div></Link>
-            </div>
-        </div>
-    )
-};
+import SignInModal from "../SignInModal/SignInModal";
+
+class NavContainer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            displayLogin: false
+        }
+    }
+
+    handleClickSignIn = () => {
+        this.setState({ displayLogin: !this.state.displayLogin });
+    };
+
+    render() {
+        return (
+            <React.Fragment>
+                {this.state.displayLogin && <SignInModal toggle={this.handleClickSignIn}></SignInModal>}
+                <div className={styles.NavContainer}>
+                    <div className={styles.NavContent}>
+                        <div className={styles.username}></div>
+                        <div onClick={this.handleClickSignIn} className={styles.signIn}>SIGN IN</div>
+                    </div>
+                </div>
+            </React.Fragment>
+        );
+    }
+}
 
 export default NavContainer;

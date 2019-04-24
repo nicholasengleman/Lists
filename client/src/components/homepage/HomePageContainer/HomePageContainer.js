@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 
-import styles from './HomeContainer.module.css';
+import styles from './HomePageContainer.module.css';
 
-import Header from '../../Header/header';
-import TabContainer from '../../TabContainer/TabContainer';
-import MainContainer from '../../MainContainer/MainContainer';
-import {getAllPosts, getMostRecentPosts} from "../../../services/fakePostsService";
-import {getAllClubs} from "../../../services/fakeClubService";
+import Header from '../Header/header';
+import TabContainer from '../TabContainer/TabContainer';
+import MainContainer from '../MainContainer/MainContainer';
+import { getAllPosts, getMostRecentPosts} from "../../../services/fakePostsService";
+import { getAllClubs } from "../../../services/fakeClubService";
 
 
-class HomeContainer extends Component {
+class HomePageContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -39,7 +39,7 @@ class HomeContainer extends Component {
     }
 }
 
-export default HomeContainer;
+export default HomePageContainer;
 
 
 

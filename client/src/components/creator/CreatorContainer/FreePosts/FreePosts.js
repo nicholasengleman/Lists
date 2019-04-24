@@ -10,7 +10,7 @@ const FreePosts = (props) => {
                         <div className={styles.post}>
                             <div className={styles.header}>
                                 <div>
-                                    <img src="" />
+                                    <img src="" alt=""/>
                                 </div>
                                 <div className={styles.usernameContainer}>
                                     <div className={styles.username}>Bernadette</div>
