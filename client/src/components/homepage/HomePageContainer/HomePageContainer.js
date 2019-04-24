@@ -2,11 +2,11 @@ import React, { Component } from "react";
 
 import styles from './HomeContainer.module.css';
 
-import Header from '../Header/header';
-import TabContainer from '../TabContainer/TabContainer';
-import MainContainer from '../MainContainer/MainContainer';
-import {getAllPosts, getMostRecentPosts} from "../../services/fakePostsService";
-import {getAllClubs} from "../../services/fakeClubService";
+import Header from '../../Header/header';
+import TabContainer from '../../TabContainer/TabContainer';
+import MainContainer from '../../MainContainer/MainContainer';
+import {getAllPosts, getMostRecentPosts} from "../../../services/fakePostsService";
+import {getAllClubs} from "../../../services/fakeClubService";
 
 
 class HomeContainer extends Component {

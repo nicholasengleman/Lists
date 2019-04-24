@@ -7,9 +7,11 @@
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "dependencies": {
+    "auth0-js": "^9.10.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "mysql": "^2.17.0",
     "yarn": "^1.13.0"
   },
   "devDependencies": {

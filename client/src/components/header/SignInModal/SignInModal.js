@@ -10,7 +10,6 @@ class SignInModal extends Component {
         }
     }
 
-
     toggleOpen() {
         const currentState = this.state.active;
         this.setState({active: !currentState});

@@ -1,14 +1,14 @@
 import React, {Component} from "react";
 import {Route, Link} from 'react-router-dom';
-import styles from "./DistributerContainer.module.css";
+import styles from "./CreatorProfilePage.module.css";
 
 import About from "./About/About";
 import FreePosts from "./FreePosts/FreePosts";
 
-const axios = require('axios');
+const axios = require('axios/index');
 
 
-class DistributerContainer extends Component {
+class CreatorProfilePage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -108,4 +108,4 @@ class DistributerContainer extends Component {
     }
 }
 
-export default DistributerContainer;
+export default CreatorProfilePage;
